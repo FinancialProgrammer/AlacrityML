@@ -22,9 +22,9 @@ make cu # cuda tests
 ```
 
 ### Compatible Devices
-CPU's (no specifics for x86 or arm but tested on an x86 machine)
-CUDA  (cuda compatible devices (i.e nvidia graphic cards))
-HIP   (Comming Soon...)
+CPU's (no specifics for x86 or arm but tested on an x86 machine) <br>
+CUDA  (cuda compatible devices (i.e nvidia graphic cards)) <br>
+HIP   (Comming Soon...) <br>
 
 # Reference
 [Tsoding nn.h](https://github.com/tsoding/nn.h) <br>
