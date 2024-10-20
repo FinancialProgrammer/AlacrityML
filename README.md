@@ -27,7 +27,7 @@ CUDA  (cuda compatible devices (i.e nvidia graphic cards))
 HIP   (Comming Soon...)
 
 # Reference
-(Tsoding nn.h)[https://github.com/tsoding/nn.h] <br>
+[Tsoding nn.h](https://github.com/tsoding/nn.h) <br>
 
 # TODO
 Remove internal malloc in favour of dynamic buffer, <br>
