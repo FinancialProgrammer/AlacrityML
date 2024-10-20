@@ -1,0 +1,5 @@
+# A history of Alacrity though version releases
+
+0.0.0:
+    Limited in-built functionality, volatile cuda algorithm support and no support for executing anything except lambda functions through clt::algo.
+    Not suitable as reliable backend.
