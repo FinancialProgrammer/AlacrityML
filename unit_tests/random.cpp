@@ -26,5 +26,8 @@ int main() {
   TEST_CASE_ADV(float,x,!= 0,len); // this is not a good test
   TEST_CASE_ADV(float,y,!= 0,len); // with 2 it should be slightly better
 
+  alc::free(x);
+  alc::free(y);
+
   alc::__clean__();
 }

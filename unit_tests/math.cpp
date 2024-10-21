@@ -49,7 +49,8 @@ int main() {
 
   // backward activation functions
 
-
+  alc::free(x);
+  alc::free(y);
 
   alc::__clean__();
 }

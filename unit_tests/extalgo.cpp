@@ -33,5 +33,8 @@ int main() {
   TEST_CASE(float,y,1024.f,outputLen)
   __ALC_TEST_DEVICE_ERROR();
 
+  alc::free(x);
+  alc::free(y);
+
   alc::__clean__();
 }

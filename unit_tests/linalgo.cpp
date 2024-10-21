@@ -35,5 +35,10 @@ int main() {
   alc::dot( mat, matBuffer, vecCol, vecRow, rows, cols ); alc::sync(); __ALC_TEST_DEVICE_ERROR();
   TEST_CASE(float, vecRow, cols, rows); __ALC_TEST_DEVICE_ERROR();
 
+  alc::free(mat);
+  alc::free(matBuffer);
+  alc::free(vecRow);
+  alc::free(vecCol);
+
   alc::__clean__();
 }

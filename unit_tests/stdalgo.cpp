@@ -18,6 +18,7 @@ int main() {
     BAD_CASE(good_memory,not be NULL);
   }
   GOOD_CASE(good_memory,is not NULL);
+  alc::free(good_memory);
 
   // Check Memory Copying
   TEST_SETUP(Test Memory Manipulation)
@@ -46,6 +47,9 @@ int main() {
   alc::memcpyFromHost(y,hx,len*sizeof(float)); __ALC_TEST_DEVICE_ERROR();
   TEST_CASE(float,y,1,len);
 
+  alc::free(x);
+  alc::free(y);
+
   // check bad memory
   TEST_SETUP(Bad Memory Test)
   void *bad_memory = alc::malloc(-1);
@@ -53,6 +57,7 @@ int main() {
     BAD_CASE(bad_memory,NULL);
   }
   GOOD_CASE(bad_memory,NULL);
+
 
   alc::__clean__();
 }
